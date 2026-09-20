@@ -182,3 +182,52 @@ a {
   color: var(--brand-dark);
   border: 1px solid var(--line);
 }
+
+.faq-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+.faq-item {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fafafa;
+  padding: 0;
+  margin: 0 0 0.55rem;
+  overflow: hidden;
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 0.85rem 1rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  float: right;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.faq-item[open] summary::after {
+  content: "–";
+}
+
+.faq-item[open] summary {
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.faq-item p {
+  padding: 0.85rem 1rem 1rem;
+  font-size: 0.98rem;
+  background: #fff;
+}
